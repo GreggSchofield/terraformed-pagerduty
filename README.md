@@ -23,6 +23,16 @@ a remote backend (and in particular Terraform Cloud) include:
   enforce the [principal of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege)
 
 
+## Prerequisites
+
+All the following are required to use this repository properly:
+
+- Sign-up for a [free PagerDuty account](https://www.pagerduty.com/sign-up-free/)
+- Terraform v1.x.y installed locally (follow the
+  [Hashicorp Learn tutorial](https://learn.hashicorp.com/tutorials/terraform/install-cli)) for a manual installation
+  (from source), OS X, Windows (via Chocolatey) or Linux
+- A [Terraform Cloud account](https://app.terraform.io/signup/account)
+
 ## Getting Started
 
 Clone this repository:

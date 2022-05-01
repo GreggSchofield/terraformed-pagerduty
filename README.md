@@ -50,6 +50,8 @@ _example-workspace_ respectively and should be re-named as suitable. Whilst crea
 **API-driven workflow** type. This can be confusing since there is a **Version control workflow** type available but our
 workflow will eventually trigger the remote backend via an execution of `terraform apply` within the pipeline itself.
 
+Next, create a PagerDuty _v2 authorisation token_ and store this as a repository-scoped GitHub Actions secret with the
+key `PAGERDUTY_TOKEN`.
+
 Finally, create a _Team API token_ within Terraform Cloud and then store this as a repository-scoped GitHub Actions
 secret with the key `TERRAFORM_CLOUD_API_TOKEN`.
-

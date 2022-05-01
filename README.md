@@ -40,3 +40,16 @@ Clone this repository:
 ```shell
 git clone https://github.com/GreggSchofield/terraformed-pagerduty
 ```
+
+## In Terraform Cloud
+
+Within your Terraform Cloud account create an
+[organisation](https://www.terraform.io/cloud-docs/users-teams-organizations/organizations) and within this, a
+[workspace](https://www.terraform.io/language/state/workspaces). These are named _example-organisation_ and
+_example-workspace_ respectively and should be re-named as suitable. Whilst creating the workspace ensure to select the
+**API-driven workflow** type. This can be confusing since there is a **Version control workflow** type available but our
+workflow will eventually trigger the remote backend via an execution of `terraform apply` within the pipeline itself.
+
+Finally, create a _Team API token_ within Terraform Cloud and then store this as a repository-scoped GitHub Actions
+secret with the key `TERRAFORM_CLOUD_API_TOKEN`.
+

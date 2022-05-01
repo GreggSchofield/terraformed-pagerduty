@@ -35,11 +35,13 @@ All the following are required to use this repository properly:
 
 ## Getting Started
 
-Clone this repository:
+Clone this repository to take a closer look at the internals:
 
 ```shell
 git clone https://github.com/GreggSchofield/terraformed-pagerduty
 ```
+
+When you are happy you want to proceed, fork this repository.
 
 ## In Terraform Cloud
 
